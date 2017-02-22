@@ -9,4 +9,6 @@ public interface Repository<T, ID extends Serializable> {
 	Iterable<T> findAll();
 	
 	T findMatching(T object);
+	
+	T createOrUpdate(T object);
 }
