@@ -24,11 +24,22 @@ public abstract class AbstractFixtureRepository extends AbstractRepository<Fixtu
 
 	@Override
 	public void validateUpdate(Fixture fixtureToUpdate, Fixture fixtureToCopyValuesFrom) {
-		if (fixtureToUpdate.getHomeGoals() != null &&
-				fixtureToCopyValuesFrom.getFixtureDate() != null &&
-				fixtureToUpdate.getFixtureDate() != null &&
-				fixtureToCopyValuesFrom.getFixtureDate().after(fixtureToUpdate.getFixtureDate())) {
+		/*
+		 * The fixture we're trying to update is a result (has date and score) and the fixture we're updating from
+		 * is also a result, but has a later date. In this case, we assume this is a play-off fixture that we don't want to track.
+		 */
+		if (fixtureIsAResult(fixtureToUpdate) &&
+			fixtureIsAResult(fixtureToCopyValuesFrom) &&
+			fixtureToCopyFromIsAfterTheFixtureToUpdate (fixtureToUpdate, fixtureToCopyValuesFrom)) {
 			throw new RepositoryException ("Cannot save a playoff");
 		}
+	}
+	
+	private boolean fixtureIsAResult (Fixture fixture) {
+		return (fixture.getFixtureDate() != null && fixture.getHomeGoals() != null);
+	}
+	
+	private boolean fixtureToCopyFromIsAfterTheFixtureToUpdate (Fixture fixtureToUpdate, Fixture fixtureToCopyValuesFrom) {
+		return fixtureToCopyValuesFrom.getFixtureDate().after(fixtureToUpdate.getFixtureDate());
 	}
 }
