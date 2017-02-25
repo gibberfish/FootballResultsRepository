@@ -1,7 +1,6 @@
 package mindbadger.footballresultsanalyser.repository;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;

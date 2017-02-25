@@ -2,7 +2,6 @@ package mindbadger.footballresultsanalyser.repository;
 
 import java.util.List;
 
-import mindbadger.footballresultsanalyser.domain.Division;
 import mindbadger.footballresultsanalyser.domain.Fixture;
 import mindbadger.footballresultsanalyser.domain.Season;
 import mindbadger.footballresultsanalyser.domain.SeasonDivision;
