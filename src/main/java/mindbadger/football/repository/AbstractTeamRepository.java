@@ -1,6 +1,6 @@
-package mindbadger.footballresultsanalyser.repository;
+package mindbadger.football.repository;
 
-import mindbadger.footballresultsanalyser.domain.Team;
+import mindbadger.football.domain.Team;
 
 public abstract class AbstractTeamRepository extends AbstractRepository<Team, String> implements TeamRepository {
 	@Override

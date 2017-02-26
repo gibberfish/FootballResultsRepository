@@ -1,4 +1,4 @@
-package mindbadger.footballresultsanalyser.repository;
+package mindbadger.football.repository;
 
 public class RepositoryException extends RuntimeException {
 	private static final long serialVersionUID = 4818154351253610833L;

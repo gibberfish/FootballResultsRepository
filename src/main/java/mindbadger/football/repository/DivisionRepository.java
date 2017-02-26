@@ -1,6 +1,6 @@
-package mindbadger.footballresultsanalyser.repository;
+package mindbadger.football.repository;
 
-import mindbadger.footballresultsanalyser.domain.Division;
+import mindbadger.football.domain.Division;
 
 public interface DivisionRepository extends Repository<Division, String> {
 	Division findDivisionByName (String name);

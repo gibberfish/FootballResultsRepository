@@ -1,6 +1,6 @@
-package mindbadger.footballresultsanalyser.repository;
+package mindbadger.football.repository;
 
-import mindbadger.footballresultsanalyser.domain.Fixture;
+import mindbadger.football.domain.Fixture;
 
 public abstract class AbstractFixtureRepository extends AbstractRepository<Fixture, String> implements FixtureRepository {
 	@Override

@@ -1,4 +1,4 @@
-package mindbadger.footballresultsanalyser.repository;
+package mindbadger.football.repository;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
@@ -8,7 +8,8 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import mindbadger.footballresultsanalyser.domain.Division;
+import mindbadger.football.domain.Division;
+import mindbadger.football.repository.AbstractDivisionRepository;
 
 public class AbstractDivisionRepositoryTest {
 	private static final String DIV_ID1 = "DIV1";

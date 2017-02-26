@@ -1,4 +1,4 @@
-package mindbadger.footballresultsanalyser.repository;
+package mindbadger.football.repository;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.times;
@@ -10,7 +10,8 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import mindbadger.footballresultsanalyser.domain.Team;
+import mindbadger.football.domain.Team;
+import mindbadger.football.repository.AbstractTeamRepository;
 
 public class AbstractTeamRepositoryTest {
 	private static final String TEAM_ID1 = "TEAM1";

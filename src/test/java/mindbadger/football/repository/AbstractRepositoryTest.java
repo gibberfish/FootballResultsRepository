@@ -1,4 +1,4 @@
-package mindbadger.footballresultsanalyser.repository;
+package mindbadger.football.repository;
 
 import static org.junit.Assert.*;
 
@@ -6,6 +6,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+
+import mindbadger.football.repository.AbstractRepository;
+import mindbadger.football.repository.RepositoryException;
 
 public class AbstractRepositoryTest {
 	private static final int ID_1 = 12;

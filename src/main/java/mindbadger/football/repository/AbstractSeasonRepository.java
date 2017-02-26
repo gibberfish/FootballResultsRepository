@@ -1,10 +1,10 @@
-package mindbadger.footballresultsanalyser.repository;
+package mindbadger.football.repository;
 
-import mindbadger.footballresultsanalyser.domain.Division;
-import mindbadger.footballresultsanalyser.domain.Season;
-import mindbadger.footballresultsanalyser.domain.SeasonDivision;
-import mindbadger.footballresultsanalyser.domain.SeasonDivisionTeam;
-import mindbadger.footballresultsanalyser.domain.Team;
+import mindbadger.football.domain.Division;
+import mindbadger.football.domain.Season;
+import mindbadger.football.domain.SeasonDivision;
+import mindbadger.football.domain.SeasonDivisionTeam;
+import mindbadger.football.domain.Team;
 
 public abstract class AbstractSeasonRepository extends AbstractRepository<Season, Integer> implements SeasonRepository {
 	@Override

@@ -1,4 +1,4 @@
-package mindbadger.footballresultsanalyser.repository;
+package mindbadger.football.repository;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
@@ -11,11 +11,12 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-import mindbadger.footballresultsanalyser.domain.Division;
-import mindbadger.footballresultsanalyser.domain.Season;
-import mindbadger.footballresultsanalyser.domain.SeasonDivision;
-import mindbadger.footballresultsanalyser.domain.SeasonDivisionTeam;
-import mindbadger.footballresultsanalyser.domain.Team;
+import mindbadger.football.domain.Division;
+import mindbadger.football.domain.Season;
+import mindbadger.football.domain.SeasonDivision;
+import mindbadger.football.domain.SeasonDivisionTeam;
+import mindbadger.football.domain.Team;
+import mindbadger.football.repository.AbstractSeasonRepository;
 
 public class AbstractSeasonRepositoryTest {
 	private static final Integer SEASON1 = 2006;

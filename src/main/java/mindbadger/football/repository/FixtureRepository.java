@@ -1,11 +1,11 @@
-package mindbadger.footballresultsanalyser.repository;
+package mindbadger.football.repository;
 
 import java.util.List;
 
-import mindbadger.footballresultsanalyser.domain.Fixture;
-import mindbadger.footballresultsanalyser.domain.Season;
-import mindbadger.footballresultsanalyser.domain.SeasonDivision;
-import mindbadger.footballresultsanalyser.domain.Team;
+import mindbadger.football.domain.Fixture;
+import mindbadger.football.domain.Season;
+import mindbadger.football.domain.SeasonDivision;
+import mindbadger.football.domain.Team;
 
 public interface FixtureRepository extends Repository<Fixture, String>{
 	List<Fixture> getFixturesWithNoFixtureDate();
