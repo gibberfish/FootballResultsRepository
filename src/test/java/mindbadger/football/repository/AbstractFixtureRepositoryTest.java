@@ -79,6 +79,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 		};
 		
 		// When
@@ -107,6 +108,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 		};
 		
 		// When
@@ -135,6 +137,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 		};
 		
 		// When
@@ -157,6 +160,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 		};
 		
 		// When
@@ -183,6 +187,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 		};
 		
 		// When
@@ -205,6 +210,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 		};
 		
 		try {

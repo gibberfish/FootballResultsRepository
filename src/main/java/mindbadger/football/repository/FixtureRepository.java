@@ -1,5 +1,6 @@
 package mindbadger.football.repository;
 
+import java.util.Calendar;
 import java.util.List;
 
 import mindbadger.football.domain.Fixture;
@@ -13,4 +14,5 @@ public interface FixtureRepository extends Repository<Fixture, String>{
 	List<Fixture> getFixturesForDivisionInSeason(SeasonDivision seasonDivision);
 	List<Fixture> getUnplayedFixturesBeforeToday();
 	Fixture getExistingFixture(Season season, Team homeTeam, Team awayTeam);
+	List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate);
 }
