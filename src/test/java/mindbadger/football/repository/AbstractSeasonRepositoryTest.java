@@ -162,16 +162,19 @@ public class AbstractSeasonRepositoryTest {
 	public void shouldGetSeasonDivisionTeam () {
 		// Given
 		seasonDivisions.add(mockSeasonDivision1);
+		when (mockSeason1.getSeasonNumber()).thenReturn(SEASON1);
 		when (mockSeason1.getSeasonDivisions()).thenReturn(seasonDivisions);
 		
 		seasonDivisionTeams.add(mockSeasonDivisionTeam1);
 		seasonDivisionTeams.add(mockSeasonDivisionTeam2);
 		when (mockSeasonDivision1.getSeasonDivisionTeams()).thenReturn(seasonDivisionTeams);
+		when (mockSeasonDivision1.getSeason()).thenReturn(mockSeason1);
+		when (mockSeasonDivision1.getDivision()).thenReturn(mockDivision1);
 				
 		AbstractSeasonRepository objectUnderTest = new AbstractSeasonRepository () {
 			@Override public Season save(Season object) {return null;}
 			@Override public Season findOne(Integer id) {
-				if (id != SEASON1) {
+				if (id == SEASON1) {
 					return mockSeason1;
 				} else {
 					return null;
@@ -192,11 +195,14 @@ public class AbstractSeasonRepositoryTest {
 	public void shouldNotGetSeasonDivisionTeam () {
 		// Given
 		seasonDivisions.add(mockSeasonDivision1);
+		when (mockSeason1.getSeasonNumber()).thenReturn(SEASON1);
 		when (mockSeason1.getSeasonDivisions()).thenReturn(seasonDivisions);
 		
 		seasonDivisionTeams.add(mockSeasonDivisionTeam2);
 		when (mockSeasonDivision1.getSeasonDivisionTeams()).thenReturn(seasonDivisionTeams);
-				
+		when (mockSeasonDivision1.getSeason()).thenReturn(mockSeason1);
+		when (mockSeasonDivision1.getDivision()).thenReturn(mockDivision1);
+		
 		AbstractSeasonRepository objectUnderTest = new AbstractSeasonRepository () {
 			@Override public Season save(Season object) {return null;}
 			@Override public Season findOne(Integer id) {

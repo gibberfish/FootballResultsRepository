@@ -7,6 +7,7 @@ import mindbadger.football.domain.SeasonDivisionTeam;
 import mindbadger.football.domain.Team;
 
 public abstract class AbstractSeasonRepository extends AbstractRepository<Season, Integer> implements SeasonRepository {
+	
 	@Override
 	public Season findMatching(Season season) {
 		return findOne(getIDFor(season));
@@ -15,6 +16,8 @@ public abstract class AbstractSeasonRepository extends AbstractRepository<Season
 	@Override
 	public SeasonDivision getSeasonDivision(Season season, Division division) {
 		Season retrievedSeason = findMatching(season);
+		if (retrievedSeason == null) return null;
+		
 		for (SeasonDivision seasonDivision : retrievedSeason.getSeasonDivisions()) {
 			if (division.getDivisionId().equals(seasonDivision.getDivision().getDivisionId())) {
 				return seasonDivision;
@@ -25,7 +28,10 @@ public abstract class AbstractSeasonRepository extends AbstractRepository<Season
 
 	@Override
 	public SeasonDivisionTeam getSeasonDivisionTeam(SeasonDivision seasonDivision, Team team) {
-		for (SeasonDivisionTeam seasonDivisionTeam : seasonDivision.getSeasonDivisionTeams()) {
+		SeasonDivision retrievedSeasonDivision = getSeasonDivision(seasonDivision.getSeason(), seasonDivision.getDivision());
+		if (retrievedSeasonDivision == null) return null;
+		
+		for (SeasonDivisionTeam seasonDivisionTeam : retrievedSeasonDivision.getSeasonDivisionTeams()) {
 			if (team.getTeamId().equals(seasonDivisionTeam.getTeam().getTeamId())) {
 				return seasonDivisionTeam;
 			}
