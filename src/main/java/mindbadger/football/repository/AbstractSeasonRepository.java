@@ -47,5 +47,10 @@ public abstract class AbstractSeasonRepository extends AbstractRepository<Season
 	@Override
 	public void validateUpdate(Season seasonToUpdate, Season seasonToCopyValuesFrom) {
 	}
-
+	
+	@Override
+	public Season createOrUpdate (Season season) {
+		return this.save(season);
+	}
+	
 }
