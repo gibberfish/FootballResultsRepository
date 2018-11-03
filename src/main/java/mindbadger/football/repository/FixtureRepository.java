@@ -12,6 +12,7 @@ public interface FixtureRepository extends Repository<Fixture, String>{
 	List<Fixture> getFixturesWithNoFixtureDate();
 	List<Fixture> getFixturesForTeamInDivisionInSeason(SeasonDivision seasonDivision, Team team);
 	List<Fixture> getFixturesForDivisionInSeason(SeasonDivision seasonDivision);
+	List<Fixture> getFixturesForDivisionInSeasonOnDate(SeasonDivision seasonDivision, Calendar fixtureDate);
 	List<Fixture> getUnplayedFixturesBeforeToday();
 	Fixture getExistingFixture(Season season, Team homeTeam, Team awayTeam);
 	List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate);
