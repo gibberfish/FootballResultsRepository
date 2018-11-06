@@ -1,5 +1,7 @@
 package mindbadger.football.domain;
 
+import java.util.Calendar;
+
 public interface DomainObjectFactory {
     public Season createSeason (Integer seasonNumber);
     public Division createDivision (String divisionName);
@@ -10,4 +12,5 @@ public interface DomainObjectFactory {
     public TrackedDivision createTrackedDivision (String dialect, Integer sourceId);
     public DivisionMapping createDivisionMapping (String dialect, Integer sourceId, Integer fraId);
     public TeamMapping createTeamMapping (String dialect, Integer sourceId, Integer fraId);
+    public TeamStatistic createTeamStatistic (SeasonDivisionTeam seasonDivisionTeam, Calendar fixtureDate);
 }
