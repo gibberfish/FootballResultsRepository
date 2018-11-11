@@ -81,6 +81,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
+			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};
 		
 		// When
@@ -111,6 +112,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
+			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};
 		
 		// When
@@ -141,6 +143,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
+			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};
 		
 		// When
@@ -165,6 +168,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
+			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};
 		
 		// When
@@ -193,6 +197,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
+			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};
 		
 		// When
@@ -217,6 +222,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public void delete(Fixture object) {}
 			@Override public Iterable<Fixture> findAll() { return null;}
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
+			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};
 		
 		try {
