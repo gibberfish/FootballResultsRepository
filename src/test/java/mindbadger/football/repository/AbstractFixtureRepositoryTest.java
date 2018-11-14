@@ -28,6 +28,7 @@ public class AbstractFixtureRepositoryTest {
 	@Mock Fixture mockFixture2;
 	@Mock Season mockSeason;
 	@Mock Division mockDivision;
+	@Mock SeasonDivision mockSeasonDivision;
 	@Mock Team mockTeam1;
 	@Mock Team mockTeam2;
 	@Mock Team mockTeam3;
@@ -38,8 +39,10 @@ public class AbstractFixtureRepositoryTest {
 	@Before
 	public void setup() {
 		MockitoAnnotations.initMocks(this);
-		when (mockFixture1.getSeason()).thenReturn(mockSeason);
-		when (mockFixture1.getDivision()).thenReturn(mockDivision);
+		when (mockSeasonDivision.getSeason()).thenReturn(mockSeason);
+		when (mockSeasonDivision.getDivision()).thenReturn(mockDivision);
+
+		when (mockFixture1.getSeasonDivision()).thenReturn(mockSeasonDivision);
 		when (mockFixture1.getHomeTeam()).thenReturn(mockTeam1);
 		when (mockFixture1.getAwayTeam()).thenReturn(mockTeam2);
 		when (mockFixture1.getFixtureId()).thenReturn(FIX_ID1);
@@ -47,8 +50,7 @@ public class AbstractFixtureRepositoryTest {
 		when (mockFixture1.getAwayGoals()).thenReturn(4);
 		when (mockFixture1.getFixtureDate()).thenReturn(mockFixtureDate1);
 		
-		when (mockFixture2.getSeason()).thenReturn(mockSeason);
-		when (mockFixture2.getDivision()).thenReturn(mockDivision);
+		when (mockFixture2.getSeasonDivision()).thenReturn(mockSeasonDivision);
 		when (mockFixture2.getHomeTeam()).thenReturn(mockTeam3);
 		when (mockFixture2.getAwayTeam()).thenReturn(mockTeam4);
 		when (mockFixture2.getFixtureId()).thenReturn(FIX_ID2);
@@ -69,8 +71,8 @@ public class AbstractFixtureRepositoryTest {
 			@Override public List<Fixture> getFixturesForDivisionInSeason(SeasonDivision seasonDivision) {return null;}
 			@Override public List<Fixture> getFixturesForDivisionInSeasonOnDate(SeasonDivision seasonDivision, Calendar fixtureDate) {return null; }
 			@Override public List<Fixture> getUnplayedFixturesBeforeToday() { return null; }
-			@Override public Fixture getExistingFixture(Season season, Team homeTeam, Team awayTeam) {
-				if (mockSeason == season && mockTeam1 == homeTeam && mockTeam2 == awayTeam) {
+			@Override public Fixture getExistingFixture(SeasonDivision seasonDivision, Team homeTeam, Team awayTeam) {
+				if (mockSeasonDivision == seasonDivision && mockTeam1 == homeTeam && mockTeam2 == awayTeam) {
 					return mockFixture1;
 				} else {
 					return null;
@@ -100,8 +102,8 @@ public class AbstractFixtureRepositoryTest {
 			@Override public List<Fixture> getFixturesForDivisionInSeason(SeasonDivision seasonDivision) {return null;}
 			@Override public List<Fixture> getFixturesForDivisionInSeasonOnDate(SeasonDivision seasonDivision, Calendar fixtureDate) {return null; }
 			@Override public List<Fixture> getUnplayedFixturesBeforeToday() { return null; }
-			@Override public Fixture getExistingFixture(Season season, Team homeTeam, Team awayTeam) {
-				if (mockSeason == season && mockTeam1 == homeTeam && mockTeam2 == awayTeam) {
+			@Override public Fixture getExistingFixture(SeasonDivision seasonDivision, Team homeTeam, Team awayTeam) {
+				if (mockSeasonDivision == seasonDivision && mockTeam1 == homeTeam && mockTeam2 == awayTeam) {
 					return null;
 				} else {
 					return mockFixture1;
@@ -131,8 +133,8 @@ public class AbstractFixtureRepositoryTest {
 			@Override public List<Fixture> getFixturesForDivisionInSeason(SeasonDivision seasonDivision) {return null;}
 			@Override public List<Fixture> getFixturesForDivisionInSeasonOnDate(SeasonDivision seasonDivision, Calendar fixtureDate) {return null; }
 			@Override public List<Fixture> getUnplayedFixturesBeforeToday() { return null; }
-			@Override public Fixture getExistingFixture(Season season, Team homeTeam, Team awayTeam) {
-				if (mockSeason == season && mockTeam1 == homeTeam && mockTeam2 == awayTeam) {
+			@Override public Fixture getExistingFixture(SeasonDivision seasonDivision, Team homeTeam, Team awayTeam) {
+				if (mockSeasonDivision == seasonDivision && mockTeam1 == homeTeam && mockTeam2 == awayTeam) {
 					return null;
 				} else {
 					return mockFixture1;
@@ -162,7 +164,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public List<Fixture> getFixturesForDivisionInSeason(SeasonDivision seasonDivision) {return null;}
 			@Override public List<Fixture> getFixturesForDivisionInSeasonOnDate(SeasonDivision seasonDivision, Calendar fixtureDate) {return null; }
 			@Override public List<Fixture> getUnplayedFixturesBeforeToday() { return null; }
-			@Override public Fixture getExistingFixture(Season season, Team homeTeam, Team awayTeam) {return null;}
+			@Override public Fixture getExistingFixture(SeasonDivision seasonDivision, Team homeTeam, Team awayTeam) {return null;}
 			@Override public Fixture save(Fixture object) {return null;}
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
@@ -177,7 +179,7 @@ public class AbstractFixtureRepositoryTest {
 		// Then
 		assertEquals (mockFixture1, retrievedFixture);
 		verify (mockFixture1, times(1)).setFixtureDate(mockFixtureDate2);
-		verify (mockFixture1, times(1)).setDivision(mockDivision);
+		verify (mockFixture1, times(1)).setSeasonDivision(mockSeasonDivision);
 		verify (mockFixture1, times(1)).setHomeGoals(3);
 		verify (mockFixture1, times(1)).setAwayGoals(2);
 	}
@@ -191,7 +193,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public List<Fixture> getFixturesForDivisionInSeason(SeasonDivision seasonDivision) {return null;}
 			@Override public List<Fixture> getFixturesForDivisionInSeasonOnDate(SeasonDivision seasonDivision, Calendar fixtureDate) {return null; }
 			@Override public List<Fixture> getUnplayedFixturesBeforeToday() { return null; }
-			@Override public Fixture getExistingFixture(Season season, Team homeTeam, Team awayTeam) {return null;}
+			@Override public Fixture getExistingFixture(SeasonDivision seasonDivision, Team homeTeam, Team awayTeam) {return null;}
 			@Override public Fixture save(Fixture object) {return null;}
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
@@ -216,7 +218,7 @@ public class AbstractFixtureRepositoryTest {
 			@Override public List<Fixture> getFixturesForDivisionInSeason(SeasonDivision seasonDivision) {return null;}
 			@Override public List<Fixture> getUnplayedFixturesBeforeToday() { return null; }
 			@Override public List<Fixture> getFixturesForDivisionInSeasonOnDate(SeasonDivision seasonDivision, Calendar fixtureDate) {return null; }
-			@Override public Fixture getExistingFixture(Season season, Team homeTeam, Team awayTeam) {return null;}
+			@Override public Fixture getExistingFixture(SeasonDivision seasonDivision, Team homeTeam, Team awayTeam) {return null;}
 			@Override public Fixture save(Fixture object) {return null;}
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}

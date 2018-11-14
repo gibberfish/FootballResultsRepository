@@ -5,7 +5,7 @@ import mindbadger.football.domain.Fixture;
 public abstract class AbstractFixtureRepository extends AbstractRepository<Fixture, String> implements FixtureRepository {
 	@Override
 	public Fixture findMatching(Fixture fixture) {
-		return getExistingFixture(fixture.getSeason(), fixture.getHomeTeam(), fixture.getAwayTeam());
+		return getExistingFixture(fixture.getSeasonDivision(), fixture.getHomeTeam(), fixture.getAwayTeam());
 	}
 
 	@Override
@@ -16,7 +16,7 @@ public abstract class AbstractFixtureRepository extends AbstractRepository<Fixtu
 	@Override
 	public Fixture update(Fixture fixtureToUpdate, Fixture fixtureToCopyValuesFrom) {
 		fixtureToUpdate.setFixtureDate(fixtureToCopyValuesFrom.getFixtureDate());
-		fixtureToUpdate.setDivision(fixtureToCopyValuesFrom.getDivision());
+		fixtureToUpdate.setSeasonDivision(fixtureToCopyValuesFrom.getSeasonDivision());
 		fixtureToUpdate.setHomeGoals(fixtureToCopyValuesFrom.getHomeGoals());
 		fixtureToUpdate.setAwayGoals(fixtureToCopyValuesFrom.getAwayGoals());
 		return fixtureToUpdate;

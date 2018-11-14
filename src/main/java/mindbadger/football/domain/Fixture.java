@@ -7,8 +7,8 @@ public interface Fixture extends Serializable {
     public String getFixtureId();
     public void setFixtureId(String fixtureId);
     
-    public Season getSeason();
-    public void setSeason(Season season);
+    public SeasonDivision getSeasonDivision();
+    public void setSeasonDivision(SeasonDivision season);
     
     public Team getHomeTeam();
     public void setHomeTeam(Team homeTeam);
@@ -18,9 +18,6 @@ public interface Fixture extends Serializable {
     
     public Calendar getFixtureDate();
     public void setFixtureDate(Calendar fixtureDate);
-    
-    public Division getDivision();
-    public void setDivision(Division division);
     
     public Integer getHomeGoals();
     public void setHomeGoals(Integer homeGoals);

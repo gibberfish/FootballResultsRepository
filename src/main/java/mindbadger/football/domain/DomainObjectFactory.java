@@ -13,7 +13,7 @@ public interface DomainObjectFactory {
     public Team createTeam (String teamName);
 
     public Fixture createFixture ();
-    public Fixture createFixture (Season season, Team homeTeam, Team awayTeam);
+    public Fixture createFixture (SeasonDivision seasonDivision, Team homeTeam, Team awayTeam);
 
     public SeasonDivision createSeasonDivision ();
     public SeasonDivision createSeasonDivision (Season season, Division division, int position);

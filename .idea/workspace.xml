@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4512ec71-7503-46ae-8f79-144aa32f3a12" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mindbadger/football/domain/DomainObjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mindbadger/football/domain/DomainObjectFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mindbadger/football/domain/Fixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mindbadger/football/domain/Fixture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mindbadger/football/repository/AbstractFixtureRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mindbadger/football/repository/AbstractFixtureRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mindbadger/football/repository/FixtureRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mindbadger/football/repository/FixtureRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/mindbadger/football/repository/AbstractFixtureRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mindbadger/football/repository/AbstractFixtureRepositoryTest.java" afterDir="false" />
     </list>
@@ -19,49 +22,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/domain/Season.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/domain/DomainObjectFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="225">
+              <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/Repository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/domain/Fixture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+            <state relative-caret-position="255">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/SeasonRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/FixtureRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="150">
+              <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/AbstractSeasonRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/AbstractFixtureRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="645">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/domain/DomainObjectFactory.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mindbadger/football/repository/AbstractFixtureRepositoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+            <state relative-caret-position="187">
+              <caret line="181" column="58" selection-start-line="181" selection-start-column="58" selection-end-line="181" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -87,24 +87,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/CrnkFixtureRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/README.md" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/util/DateFormat.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/model/CrnkFixture.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/FixtureDateToFixtureRepository.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/model/CrnkTeamStatistic.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/model/CrnkTeamStatistics.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/model/CrnkFixtureDate.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/SeasonDivisionToTeamRepository.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/CrnkTeamStatisticsRepository.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/CrnkFixtureDateRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/FixtureDateToTeamStatisticsRepository.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/model/CrnkSeasonDivisionFixtureDate.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/CrnkTeamStatisticsRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/util/SourceIdParser.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/impl/CrnkFixtureRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/relationships/SeasonDivisionToDivisionRepository.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/relationships/SeasonDivisionToTeamRepository.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/relationships/SeasonDivisionToSeasonRepository.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/relationships/FixtureDateToFixtureRepository.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/relationships/FixtureDateToTeamStatisticsRepository.java" />
@@ -117,27 +105,39 @@
         <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/domain/TeamStatisticImpl.java" />
         <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/domain/SeasonDivisionTeamFixtureDateId.java" />
         <option value="$PROJECT_DIR$/src/main/java/mindbadger/football/repository/AbstractTeamStatisticRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mindbadger/football/repository/FixtureRepository.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mindbadger/football/repository/AbstractFixtureRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/repository/FixtureCrudRepository.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/examples/api_seasons_list.json" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/examples/api_divisions_list.json" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/examples/api_teams_list.json" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/examples/api_season_seasondivisions_list.json" />
-        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/impl/CrnkSeasonRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/relationships/SeasonToSeasonDivisionRepository.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/impl/CrnkSeasonDivisionFixtureDateRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mindbadger/football/domain/DomainObjectFactory.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/configuration/ApplicationContextProvider.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/model/CrnkSeason.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/domain/DomainObjectFactoryImpl.java" />
         <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/repository/SeasonRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/repository/DivisionRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/repository/FixtureRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/repository/TeamRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/repository/TeamStatisticRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsRepositoryIntegrationTests/src/test/java/mindbadger/football/repository/SeasonRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/impl/CrnkSeasonRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/impl/CrnkSeasonDivisionRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/CrnkSeasonDivisionTeamRepository.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/util/SourceIdParser.java" />
         <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/model/CrnkSeasonDivision.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/relationships/SeasonDivisionToTeamRepository.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/model/CrnkSeasonDivisionTeam.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/repository/impl/CrnkSeasonDivisionTeamRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/model/CrnkSeasonDivisionFixtureDate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mindbadger/football/domain/Fixture.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mindbadger/football/domain/DomainObjectFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mindbadger/football/repository/FixtureRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mindbadger/football/repository/AbstractFixtureRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mindbadger/football/repository/AbstractFixtureRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/domain/FixtureImpl.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/repository/FixtureCrudRepository.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/repository/FixtureRepositoryImpl.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/main/java/mindbadger/football/domain/DomainObjectFactoryImpl.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsJPARepository/src/test/java/mindbadger/footballresultsanalyser/domain/FixtureImplTest.java" />
+        <option value="$PROJECT_DIR$/../FootballResultsREST/src/main/java/mindbadger/football/api/model/CrnkFixture.java" />
       </list>
     </option>
   </component>
@@ -161,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -208,6 +209,15 @@
               <item name="FootballResultsRepository" type="b2602c69:ProjectViewProjectNode" />
               <item name="FootballResultsRepository" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="football" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FootballResultsRepository" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FootballResultsRepository" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -229,11 +239,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541943128210" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542207350605" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -311,7 +320,7 @@
     <frame x="45" y="25" width="1321" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.54831934" visible="true" weight="0.33960783" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.54831934" visible="true" weight="0.35686275" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -397,20 +406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/domain/Fixture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/AbstractFixtureRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/TeamRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -459,27 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mindbadger/football/repository/AbstractFixtureRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/FixtureRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="85" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/domain/Season.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/AbstractRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -487,10 +461,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/Repository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/AbstractSeasonRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="240">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -501,20 +478,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/AbstractSeasonRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/Repository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/domain/Season.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/domain/DomainObjectFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state relative-caret-position="225">
+          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/domain/Fixture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/FixtureRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mindbadger/football/repository/AbstractFixtureRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mindbadger/football/repository/AbstractFixtureRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="181" column="58" selection-start-line="181" selection-start-column="58" selection-end-line="181" selection-end-column="58" />
         </state>
       </provider>
     </entry>
