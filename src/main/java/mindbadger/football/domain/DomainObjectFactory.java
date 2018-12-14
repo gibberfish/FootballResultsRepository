@@ -25,7 +25,12 @@ public interface DomainObjectFactory {
     public TeamStatistic createTeamStatistic (SeasonDivisionTeam seasonDivisionTeam, Calendar fixtureDate,
                                               String statistic);
 
+    public TrackedDivision createTrackedDivision ();
     public TrackedDivision createTrackedDivision (String dialect, Integer sourceId);
+
+    public DivisionMapping createDivisionMapping ();
     public DivisionMapping createDivisionMapping (String dialect, Integer sourceId, Integer fraId);
+
+    public TeamMapping createTeamMapping ();
     public TeamMapping createTeamMapping (String dialect, Integer sourceId, Integer fraId);
 }
