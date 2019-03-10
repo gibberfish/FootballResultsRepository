@@ -81,7 +81,9 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture save(Fixture object) {return null;}
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
-			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> findAll() { return null;}
+			@Override public List<? extends Fixture> saveAll(List<? extends Fixture> objects) { return null;}
+
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};
@@ -112,7 +114,8 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture save(Fixture object) {return null;}
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
-			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> findAll() { return null;}
+			@Override public List<? extends Fixture> saveAll(List<? extends Fixture> objects) { return null;}
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};
@@ -143,7 +146,8 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture save(Fixture object) {return null;}
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
-			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> findAll() { return null;}
+			@Override public List<? extends Fixture> saveAll(List<? extends Fixture> objects) { return null;}
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};
@@ -168,7 +172,8 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture save(Fixture object) {return null;}
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
-			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> findAll() { return null;}
+			@Override public List<? extends Fixture> saveAll(List<? extends Fixture> objects) { return null;}
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};
@@ -197,7 +202,8 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture save(Fixture object) {return null;}
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
-			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> findAll() { return null;}
+			@Override public List<? extends Fixture> saveAll(List<? extends Fixture> objects) { return null;}
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};
@@ -222,7 +228,8 @@ public class AbstractFixtureRepositoryTest {
 			@Override public Fixture save(Fixture object) {return null;}
 			@Override public Fixture findOne(String id) { return null;}
 			@Override public void delete(Fixture object) {}
-			@Override public Iterable<Fixture> findAll() { return null;}
+			@Override public List<Fixture> findAll() { return null;}
+			@Override public List<? extends Fixture> saveAll(List<? extends Fixture> objects) { return null;}
 			@Override public List<Fixture> getUnplayedFixturesOnDate(Calendar fixtureDate) {return null;}
 			@Override public List<Calendar> getFixtureDatesForDivisionInSeason (SeasonDivision seasonDivision) {return null;}
 		};

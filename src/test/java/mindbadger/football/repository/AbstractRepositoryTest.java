@@ -10,6 +10,8 @@ import org.mockito.MockitoAnnotations;
 import mindbadger.football.repository.AbstractRepository;
 import mindbadger.football.repository.RepositoryException;
 
+import java.util.List;
+
 public class AbstractRepositoryTest {
 	private static final int ID_1 = 12;
 	private static final int ID_2 = 51;
@@ -32,8 +34,9 @@ public class AbstractRepositoryTest {
 			@Override public Object save(Object object) {return object;}
 			@Override public Object findOne(Integer id) {return null;}
 			@Override public Object findMatching(Object object) {return null;}
-			@Override public Iterable<Object> findAll() {return null;}
 			@Override public void delete(Object object) {}
+			@Override public List<Object> findAll() { return null; }
+			@Override public List<? extends Object> saveAll(List<? extends Object> objects) { return null; }
 			@Override public Object update(Object objectToUpdate, Object objectToCopyValuesFrom) {return null;}
 			@Override public Integer getIDFor(Object object) {return null;}
 			@Override public void validateUpdate(Object objectToUpdate, Object objectToCopyValuesFrom) {}
@@ -57,11 +60,12 @@ public class AbstractRepositoryTest {
 			@Override public Object save(Object object) {return object;}
 			@Override public Object findOne(Integer id) {return null;}
 			@Override public Object findMatching(Object object) {return null;}
-			@Override public Iterable<Object> findAll() {return null;}
 			@Override public void delete(Object object) {}
 			@Override public Object update(Object objectToUpdate, Object objectToCopyValuesFrom) {return null;}
 			@Override public Integer getIDFor(Object object) {return ID_1;}
 			@Override public void validateUpdate(Object objectToUpdate, Object objectToCopyValuesFrom) {}
+			@Override public List<Object> findAll() { return null; }
+			@Override public List<? extends Object> saveAll(List<? extends Object> objects) { return null; }
 		};
 		
 		try {
@@ -85,7 +89,6 @@ public class AbstractRepositoryTest {
 				}
 			}
 			@Override public Object findMatching(Object object) {return mockObject2;}
-			@Override public Iterable<Object> findAll() {return null;}
 			@Override public void delete(Object object) {}
 			@Override public Object update(Object objectToUpdate, Object objectToCopyValuesFrom) {return null;}
 			@Override public Integer getIDFor(Object object) {
@@ -96,6 +99,8 @@ public class AbstractRepositoryTest {
 				}
 			}
 			@Override public void validateUpdate(Object objectToUpdate, Object objectToCopyValuesFrom) {}
+			@Override public List<Object> findAll() { return null; }
+			@Override public List<? extends Object> saveAll(List<? extends Object> objects) { return null; }
 		};
 		
 		try {
@@ -119,13 +124,14 @@ public class AbstractRepositoryTest {
 				}
 			}
 			@Override public Object findMatching(Object object) {return null;}
-			@Override public Iterable<Object> findAll() {return null;}
 			@Override public void delete(Object object) {}
 			@Override public Object update(Object objectToUpdate, Object objectToCopyValuesFrom) {return null;}
 			@Override public Integer getIDFor(Object object) {
 				return ID_1;
 			}
 			@Override public void validateUpdate(Object objectToUpdate, Object objectToCopyValuesFrom) {}
+			@Override public List<Object> findAll() { return null; }
+			@Override public List<? extends Object> saveAll(List<? extends Object> objects) { return null; }
 		};
 		
 		// When
@@ -142,11 +148,12 @@ public class AbstractRepositoryTest {
 			@Override public Object save(Object object) {return object;}
 			@Override public Object findOne(Integer id) {return null;}
 			@Override public Object findMatching(Object object) {return null;}
-			@Override public Iterable<Object> findAll() {return null;}
 			@Override public void delete(Object object) {}
 			@Override public Object update(Object objectToUpdate, Object objectToCopyValuesFrom) {return null;}
 			@Override public Integer getIDFor(Object object) {return null;}
 			@Override public void validateUpdate(Object objectToUpdate, Object objectToCopyValuesFrom) {}
+			@Override public List<Object> findAll() { return null; }
+			@Override public List<? extends Object> saveAll(List<? extends Object> objects) { return null; }
 		};
 		
 		// When
@@ -163,7 +170,6 @@ public class AbstractRepositoryTest {
 			@Override public Object save(Object object) {return object;}
 			@Override public Object findOne(Integer id) {return null;}
 			@Override public Object findMatching(Object object) {return mockObject2;}
-			@Override public Iterable<Object> findAll() {return null;}
 			@Override public void delete(Object object) {}
 			@Override public Object update(Object objectToUpdate, Object objectToCopyValuesFrom) {return mockObject2;}
 			@Override public Integer getIDFor(Object object) {
@@ -174,6 +180,8 @@ public class AbstractRepositoryTest {
 				}
 			}
 			@Override public void validateUpdate(Object objectToUpdate, Object objectToCopyValuesFrom) {}
+			@Override public List<Object> findAll() { return null; }
+			@Override public List<? extends Object> saveAll(List<? extends Object> objects) { return null; }
 		};
 		
 		// When
@@ -190,7 +198,6 @@ public class AbstractRepositoryTest {
 			@Override public Object save(Object object) {return object;}
 			@Override public Object findOne(Integer id) {return null;}
 			@Override public Object findMatching(Object object) {return mockObject2;}
-			@Override public Iterable<Object> findAll() {return null;}
 			@Override public void delete(Object object) {}
 			@Override public Object update(Object objectToUpdate, Object objectToCopyValuesFrom) {return mockObject2;}
 			@Override public Integer getIDFor(Object object) {
@@ -203,6 +210,8 @@ public class AbstractRepositoryTest {
 			@Override public void validateUpdate(Object objectToUpdate, Object objectToCopyValuesFrom) {
 				throw new RepositoryException ("Validation failed");
 			}
+			@Override public List<Object> findAll() { return null; }
+			@Override public List<? extends Object> saveAll(List<? extends Object> objects) { return null; }
 		};
 		
 		try {

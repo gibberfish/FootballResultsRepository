@@ -13,6 +13,8 @@ import org.mockito.MockitoAnnotations;
 import mindbadger.football.domain.Team;
 import mindbadger.football.repository.AbstractTeamRepository;
 
+import java.util.List;
+
 public class AbstractTeamRepositoryTest {
 	private static final String TEAM_ID1 = "TEAM1";
 	private static final String TEAM_NAME1 = "Pompey";
@@ -46,7 +48,8 @@ public class AbstractTeamRepositoryTest {
 			@Override public Team save(Team object) {return null;}
 			@Override public Team findOne(String id) {return null;}
 			@Override public void delete(Team object) {}
-			@Override public Iterable<Team> findAll() {return null;}
+			@Override public List<Team> findAll() { return null; }
+			@Override public List<? extends Team> saveAll(List<? extends Team> objects) { return null; }
 		};
 		
 		// When
@@ -70,7 +73,8 @@ public class AbstractTeamRepositoryTest {
 			@Override public Team save(Team object) {return null;}
 			@Override public Team findOne(String id) {return null;}
 			@Override public void delete(Team object) {}
-			@Override public Iterable<Team> findAll() {return null;}
+			@Override public List<Team> findAll() { return null; }
+			@Override public List<? extends Team> saveAll(List<? extends Team> objects) { return null; }
 		};
 		
 		// When
@@ -94,7 +98,8 @@ public class AbstractTeamRepositoryTest {
 			@Override public Team save(Team object) {return null;}
 			@Override public Team findOne(String id) {return null;}
 			@Override public void delete(Team object) {}
-			@Override public Iterable<Team> findAll() {return null;}
+			@Override public List<Team> findAll() { return null; }
+			@Override public List<? extends Team> saveAll(List<? extends Team> objects) { return null; }
 		};
 		
 		// When
@@ -112,7 +117,8 @@ public class AbstractTeamRepositoryTest {
 			@Override public Team save(Team object) {return null;}
 			@Override public Team findOne(String id) {return null;}
 			@Override public void delete(Team object) {}
-			@Override public Iterable<Team> findAll() {return null;}
+			@Override public List<Team> findAll() { return null; }
+			@Override public List<? extends Team> saveAll(List<? extends Team> objects) { return null; }
 		};
 		
 		// When
@@ -131,7 +137,8 @@ public class AbstractTeamRepositoryTest {
 			@Override public Team save(Team object) {return null;}
 			@Override public Team findOne(String id) {return null;}
 			@Override public void delete(Team object) {}
-			@Override public Iterable<Team> findAll() {return null;}
+			@Override public List<Team> findAll() { return null; }
+			@Override public List<? extends Team> saveAll(List<? extends Team> objects) { return null; }
 		};
 		
 		// When

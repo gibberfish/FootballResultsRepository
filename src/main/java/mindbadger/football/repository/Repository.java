@@ -1,14 +1,17 @@
 package mindbadger.football.repository;
 
 import java.io.Serializable;
+import java.util.List;
 
 public interface Repository<T, ID extends Serializable> {
-	T save(T object);
 	T findOne(ID id);
-	void delete(T object);
-	Iterable<T> findAll();
-	
 	T findMatching(T object);
-	
+
+	T save(T object);
 	T createOrUpdate(T object);
+
+	void delete(T object);
+
+	List<? extends T> findAll();
+	List<? extends T> saveAll(List<? extends T> objects);
 }

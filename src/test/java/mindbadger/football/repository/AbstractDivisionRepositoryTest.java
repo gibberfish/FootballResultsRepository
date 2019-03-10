@@ -11,6 +11,8 @@ import org.mockito.MockitoAnnotations;
 import mindbadger.football.domain.Division;
 import mindbadger.football.repository.AbstractDivisionRepository;
 
+import java.util.List;
+
 public class AbstractDivisionRepositoryTest {
 	private static final String DIV_ID1 = "DIV1";
 	private static final String DIV_NAME1 = "Premier";
@@ -44,7 +46,8 @@ public class AbstractDivisionRepositoryTest {
 			@Override public Division save(Division object) {return null;}
 			@Override public Division findOne(String id) {return null;}
 			@Override public void delete(Division object) {}
-			@Override public Iterable<Division> findAll() {return null;}
+			@Override public List<Division> findAll() {return null;}
+			@Override public List<? extends Division> saveAll(List<? extends Division> objects) { return null; }
 		};
 		
 		// When
@@ -68,7 +71,8 @@ public class AbstractDivisionRepositoryTest {
 			@Override public Division save(Division object) {return null;}
 			@Override public Division findOne(String id) {return null;}
 			@Override public void delete(Division object) {}
-			@Override public Iterable<Division> findAll() {return null;}
+			@Override public List<Division> findAll() {return null;}
+			@Override public List<? extends Division> saveAll(List<? extends Division> objects) { return null; }
 		};
 		
 		// When
@@ -92,7 +96,8 @@ public class AbstractDivisionRepositoryTest {
 			@Override public Division save(Division object) {return null;}
 			@Override public Division findOne(String id) {return null;}
 			@Override public void delete(Division object) {}
-			@Override public Iterable<Division> findAll() {return null;}
+			@Override public List<Division> findAll() {return null;}
+			@Override public List<? extends Division> saveAll(List<? extends Division> objects) { return null; }
 		};
 		
 		// When
@@ -110,7 +115,8 @@ public class AbstractDivisionRepositoryTest {
 			@Override public Division save(Division object) {return null;}
 			@Override public Division findOne(String id) {return null;}
 			@Override public void delete(Division object) {}
-			@Override public Iterable<Division> findAll() {return null;}
+			@Override public List<Division> findAll() {return null;}
+			@Override public List<? extends Division> saveAll(List<? extends Division> objects) { return null; }
 		};
 		
 		// When
@@ -129,7 +135,8 @@ public class AbstractDivisionRepositoryTest {
 			@Override public Division save(Division object) {return null;}
 			@Override public Division findOne(String id) {return null;}
 			@Override public void delete(Division object) {}
-			@Override public Iterable<Division> findAll() {return null;}
+			@Override public List<Division> findAll() {return null;}
+			@Override public List<? extends Division> saveAll(List<? extends Division> objects) { return null; }
 		};
 		
 		// When

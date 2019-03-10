@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.junit.Before;
@@ -72,7 +73,8 @@ public class AbstractSeasonRepositoryTest {
 				}
 			}
 			@Override public void delete(Season object) {}
-			@Override public Iterable<Season> findAll() {return null;}
+			@Override public List<Season> findAll() { return null; }
+			@Override public List<? extends Season> saveAll(List<? extends Season> objects) { return null; }
 		};
 		
 		// When
@@ -95,7 +97,8 @@ public class AbstractSeasonRepositoryTest {
 				}
 			}
 			@Override public void delete(Season object) {}
-			@Override public Iterable<Season> findAll() {return null;}
+			@Override public List<Season> findAll() { return null; }
+			@Override public List<? extends Season> saveAll(List<? extends Season> objects) { return null; }
 		};
 		
 		// When
@@ -122,7 +125,8 @@ public class AbstractSeasonRepositoryTest {
 				}
 			}
 			@Override public void delete(Season object) {}
-			@Override public Iterable<Season> findAll() {return null;}
+			@Override public List<Season> findAll() { return null; }
+			@Override public List<? extends Season> saveAll(List<? extends Season> objects) { return null; }
 		};
 		
 		// When
@@ -148,7 +152,8 @@ public class AbstractSeasonRepositoryTest {
 				}
 			}
 			@Override public void delete(Season object) {}
-			@Override public Iterable<Season> findAll() {return null;}
+			@Override public List<Season> findAll() { return null; }
+			@Override public List<? extends Season> saveAll(List<? extends Season> objects) { return null; }
 		};
 		
 		// When
@@ -181,7 +186,8 @@ public class AbstractSeasonRepositoryTest {
 				}
 			}
 			@Override public void delete(Season object) {}
-			@Override public Iterable<Season> findAll() {return null;}
+			@Override public List<Season> findAll() { return null; }
+			@Override public List<? extends Season> saveAll(List<? extends Season> objects) { return null; }
 		};
 		
 		// When
@@ -213,7 +219,8 @@ public class AbstractSeasonRepositoryTest {
 				}
 			}
 			@Override public void delete(Season object) {}
-			@Override public Iterable<Season> findAll() {return null;}
+			@Override public List<Season> findAll() { return null; }
+			@Override public List<? extends Season> saveAll(List<? extends Season> objects) { return null; }
 		};
 		
 		// When
@@ -230,7 +237,8 @@ public class AbstractSeasonRepositoryTest {
 			@Override public Season save(Season object) {return null;}
 			@Override public Season findOne(Integer id) {return null;}
 			@Override public void delete(Season object) {}
-			@Override public Iterable<Season> findAll() {return null;}
+			@Override public List<Season> findAll() { return null; }
+			@Override public List<? extends Season> saveAll(List<? extends Season> objects) { return null; }
 		};
 		
 		// When
@@ -249,7 +257,8 @@ public class AbstractSeasonRepositoryTest {
 			@Override public Season save(Season object) {return null;}
 			@Override public Season findOne(Integer id) {return null;}
 			@Override public void delete(Season object) {}
-			@Override public Iterable<Season> findAll() {return null;}
+			@Override public List<Season> findAll() { return null; }
+			@Override public List<? extends Season> saveAll(List<? extends Season> objects) { return null; }
 		};
 		
 		// When
@@ -273,7 +282,8 @@ public class AbstractSeasonRepositoryTest {
 				}
 			}
 			@Override public void delete(Season object) {}
-			@Override public Iterable<Season> findAll() {return null;}
+			@Override public List<Season> findAll() { return null; }
+			@Override public List<? extends Season> saveAll(List<? extends Season> objects) { return null; }
 		};
 		
 		// When
